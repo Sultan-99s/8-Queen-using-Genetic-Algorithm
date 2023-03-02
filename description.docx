@@ -1,0 +1,99 @@
+Name: Implementation of Genetic Algorithm to solve 8 Queen Problem. 
+In this problem, you will be applying the Genetic Algorithm to solve the 8-Queen problem. You can choose your own selection, crossover, mutation, and discard strategy. Run the algorithm to at least 100000 iterations and find the best solution achieved by applying it. As the population size choose the value 6. The fitness function for a candidate will be the number of attacking pairs.  Total fitness will be the total number of attacking pairs observed in the population. To show the output in which cells the queens stay in follow the below numbering scheme, 
+
+0	  1   2	  3	 4	 5	 6	7
+8	  9	  10					
+16		  18					
+24			    27				
+32				     36			
+40					       45		
+48					           54	
+56							           63
+
+Some examples can be observed in the following tables, 
+
+Sample 1
+Initial Population:
+sample No. 0 = 20 61 48 31 24 17 46 50
+fitness = 10
+sample No. 1 = 39 36 46 32 21 56 5 60
+fitness = 15
+sample No. 2 = 7 0 45 58 62 55 61 6
+fitness = 15
+sample No. 3 = 20 10 56 38 52 36 13 63
+fitness = 15
+sample No. 4 = 44 25 23 43 9 60 7 2
+fitness = 17
+sample No. 5 = 47 11 15 21 9 6 2 7
+fitness = 20
+Checkpoints after each 10000th operation
+iteration 10000
+Current Best 5 46 36 17 58 48 27 7
+fitness = 4
+iteration 20000
+Current Best 5 24 58 46 36 17 48 7
+fitness = 4
+iteration 30000
+Current Best 27 5 46 58 36 7 17 48
+fitness = 4
+iteration 40000
+Current Best 5 46 36 17 58 48 27 7
+fitness = 4
+iteration 50000
+Current Best 5 24 58 46 36 17 48 7
+fitness = 4
+iteration 60000
+Current Best 27 5 46 58 36 7 17 48
+fitness = 4
+iteration 70000
+Current Best 5 58 7 48 60 17 27 38
+fitness = 4
+iteration 80000
+Current Best 5 58 7 48 60 17 27 38
+fitness = 4
+iteration 90000
+Current Best 5 24 58 46 36 17 48 7
+fitness = 4
+
+
+Sample 2
+Initial Population:
+sample No. 0 = 18 46 19 38 62 36 2 16
+fitness = 13
+sample No. 1 = 60 12 59 22 44 18 37 16
+fitness = 13
+sample No. 2 = 34 28 4 60 35 61 9 32
+fitness = 14
+sample No. 3 = 44 62 23 57 54 27 41 56
+fitness = 16
+sample No. 4 = 23 54 26 29 39 32 33 41
+fitness = 18
+sample No. 5 = 18 2 63 7 31 0 4 32
+fitness = 19
+Checkpoints after each 10000th operation
+Current Best 25 13 50 60 37 3 47 0
+fitness = 4
+iteration 20000
+Current Best 13 60 3 0 25 50 37 47
+fitness = 4
+iteration 30000
+Current Best 60 25 3 0 13 50 37 47
+fitness = 4
+iteration 40000
+Current Best 13 60 3 0 25 50 37 47
+fitness = 4
+iteration 50000
+Current Best 25 13 50 60 37 3 47 0
+fitness = 4
+iteration 60000
+Current Best 25 13 50 60 37 3 47 0
+fitness = 4
+iteration 70000
+Current Best 62 13 3 50 25 37 0 47
+fitness = 4
+iteration 80000
+Current Best 13 60 3 0 25 50 37 47
+fitness = 4
+iteration 90000
+Current Best 25 13 50 60 37 3 47 0
+fitness = 4
